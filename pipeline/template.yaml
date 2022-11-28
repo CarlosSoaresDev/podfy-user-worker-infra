@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Infrastructure for email worker, [cluster ecs, repository ecr]
+
+Parameters:
+  ClusterName: 
+    Description: The name of the cluster ecs to create
+    Type: String
+  RepositoryName:
+    Description: Repository name to create
+    Type: String
+
+Resources:
+  
+  Cluster:
+    Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName:  !Ref ClusterName
+      CapacityProviders:
+        - FARGATE
+
+  RepositoryECR:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: !Ref RepositoryName
+      ImageScanningConfiguration: 
+        ScanOnPush: false

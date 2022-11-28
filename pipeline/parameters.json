@@ -1,0 +1,12 @@
+{
+  "Parameters": [
+    {
+      "ParameterKey": "ClusterName",
+      "ParameterValue": "podfy-user-worker"
+    },
+    {
+      "ParameterKey": "RepositoryName",
+      "ParameterValue": "podfy-user-worker"
+    }
+  ]
+}
