@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: Infrastructure for email worker, [cluster ecs, repository ecr]
+Description: Up infrastructure for email worker, [cluster ecs, repository ecr]
 
 Parameters:
   ClusterName: 
