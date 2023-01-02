@@ -10,7 +10,11 @@ Parameters:
     Type: String
 
 Resources:
-  
+
+# -------------------------------------------------------------------------
+# Deploy Cluster ECS Fargate and Elastic container registry
+# -------------------------------------------------------------------------
+
   Cluster:
     Type: AWS::ECS::Cluster
     Properties:
